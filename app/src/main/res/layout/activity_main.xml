@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainScreens.Remote_Activity"
+    android:background="?attr/layout_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="240dp"
+        android:weightSum="2"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="36dp"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+                android:background="@drawable/up_rounded_grey"
+                android:paddingTop="16dp"
+                android:paddingRight="24dp"
+                android:onClick="Edit_Time"
+                android:tag="UP_HOURS"
+                android:paddingLeft="24dp"
+                android:scaleType="centerInside"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="150dp"
+                android:text="@string/hours"
+                android:gravity="center"
+                android:background="?attr/main_btn_background"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:background="@drawable/down_rounded_grey"
+                android:paddingBottom="16dp"
+                android:tag="DOWN_HOURS"
+                android:onClick="Edit_Time"
+                android:paddingRight="24dp"
+                android:paddingLeft="24dp"
+                android:scaleType="centerInside"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+                >
+
+                <ImageView
+                    android:id="@+id/buttonLock0"
+                    android:layout_width="15dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_lock_outline_black_24dp"
+                    android:layout_gravity="start"
+                    android:visibility="visible"
+                    />
+                    </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="36dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="end"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/up_rounded_grey"
+                android:paddingLeft="24dp"
+                android:tag="UP_MINUTES"
+                android:paddingTop="16dp"
+                android:onClick="Edit_Time"
+                android:paddingRight="24dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+              />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="150dp"
+                android:background="?attr/main_btn_background"
+                android:gravity="center"
+                android:text="@string/minutes" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_rounded_grey"
+                android:paddingLeft="24dp"
+                android:tag="DOWN_MINUTES"
+                android:onClick="Edit_Time"
+                android:paddingRight="24dp"
+                android:paddingBottom="16dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+              >
+
+                <ImageView
+                    android:id="@+id/buttonLock1"
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_lock_outline_black_24dp"
+                    android:layout_gravity="start"
+                    android:visibility="visible"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/statusimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/signaloff"
+            android:background="@drawable/circle_border"
+            android:layout_marginTop="36dp"
+            />
+        <TextView
+            android:id="@+id/statustext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="12dp"
+            android:text=""
+            android:textColor="?attr/textcolor"/>
+        <ImageButton
+            android:onClick="Power_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:src="@drawable/ic_power_settings_new_black_24dp"
+            android:background="@drawable/circle_border"
+            android:tint="@color/red_a400"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/power"
+            android:textColor="?attr/textcolor"
+            android:layout_marginBottom="62dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/auto_config"
+            android:background="@drawable/circle_border"
+            android:tint="@color/dark31"
+            android:id="@+id/autoConfigBtn"
+            android:onClick="Auto_Config_Btn"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_config_time"
+            android:textColor="?attr/textcolor"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_build_black_24dp"
+            android:background="@drawable/circle_border"
+            android:tint="#000"
+            android:onClick="Manual_Config_Btn"
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="2dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manual_config_time"
+            android:textColor="?attr/textcolor"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:onClick="open_dashboard"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_black_24dp"
+        android:background="@android:color/transparent"
+        android:tint="?attr/tint_color"
+        android:padding="24dp"
+        android:backgroundTint="@android:color/transparent"/>
+
+
+        <TextView
+            android:id="@+id/clockFormatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="24dp"
+            android:textColor="#D5D0D0" />
+
+
+</RelativeLayout>

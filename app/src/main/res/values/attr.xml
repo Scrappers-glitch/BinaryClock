@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textcolor" format="color"/>
+    <attr name="layout_background" format="color"/>
+    <attr name="tint_color" format="color"/>
+    <attr name="main_btn_background" format="color"/>
+    <attr name="alarm_back" format="color"/>
+    <attr name="num_selector" format="color"/>
+    <attr name="darkindark" format="color"/>
+</resources>

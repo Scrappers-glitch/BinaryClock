@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="textcolor">@color/colorAccent</item>
+        <item name="layout_background">@color/white_d2</item>
+        <item name="tint_color">@color/dark31</item>
+        <item name="main_btn_background">@color/grey</item>
+        <item name="alarm_back">@color/white</item>
+        <item name="num_selector">@color/white_d2</item>
+        <item name="darkindark">@color/grey</item>
+
+
+    </style>
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/dark31</item>
+        <item name="colorPrimaryDark">@color/dark31</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="textcolor">@color/white</item>
+        <item name="layout_background">@color/dark31</item>
+        <item name="tint_color">@color/colorPrimaryDark</item>
+        <item name="main_btn_background">#fff1f1f1</item>
+        <item name="alarm_back">@color/dark31</item>
+        <item name="num_selector">@color/colorAccent</item>
+        <item name="darkindark">@color/dark31</item>
+
+    </style>
+
+</resources>

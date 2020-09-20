@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="390dp"
+    android:background="?attr/alarm_back"
+    >
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/alarm_back"
+        android:headerBackground="@color/dark31"
+        android:numbersBackgroundColor="?attr/alarm_back"
+        android:numbersSelectorColor="?attr/num_selector"
+        android:numbersTextColor="?attr/textcolor"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_alarm"
+        android:textSize="5pt"
+        android:textColor="?attr/textcolor"
+        android:id="@+id/setAlarm"
+        android:background="?attr/darkindark"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/textcolor"
+        android:text="@string/cancelAlarm"
+        android:id="@+id/cancelAlarm"
+        android:textSize="5pt"
+        android:background="?attr/darkindark"
+        android:layout_toStartOf="@id/setAlarm"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

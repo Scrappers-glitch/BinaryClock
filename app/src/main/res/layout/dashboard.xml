@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Dashboard"
+        app:subtitle="All Answers are here"
+        app:titleTextColor="@color/colorPrimaryDark"
+        app:subtitleTextColor="@color/grey"
+        android:padding="8dp"
+        android:background="#0091EA"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal"
+                android:padding="8dp">
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/binaryGameOpener"
+                android:text="@string/binary_game"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/dashboard_buttons"
+                />
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/openGuide"
+                    android:text="@string/guide"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/dashboard_buttons"
+                    android:textColor="@color/colorPrimary"
+                    />
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/openAlarm"
+                    android:text="@string/alarm"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/dashboard_buttons"
+                    android:textColor="@color/colorPrimary"
+                    />
+                <Button
+                    android:text="Settings"
+                    android:id="@+id/settingsbtn"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/dashboard_buttons"
+                    android:textColor="@color/colorPrimary"
+                    />
+                <Button
+                    android:text="About"
+                    android:id="@+id/about"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/dashboard_buttons"
+                    android:textColor="@color/colorPrimary"
+                    />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+</LinearLayout>

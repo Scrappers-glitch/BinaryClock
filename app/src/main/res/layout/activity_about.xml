@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:background="@color/white"
+    android:alpha="40"
+    android:orientation="vertical"
+    tools:context=".mainScreens.aboutActivity"
+    android:layout_gravity="center"
+    >
+<!--    <App Details>   -->
+<!--    App Image-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/note"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/app_name"
+        android:foregroundGravity="center"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:src="@drawable/launcher_ico" />
+
+<!--    Titles of App-->
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:text="@string/version"
+        android:layout_below="@id/note"/>
+    <TextView
+        android:id="@+id/withLove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:background="@color/transparent"
+        android:textSize="13sp"
+        android:textAlignment="center"
+        android:text="@string/love"
+        android:layout_below="@id/version"/>
+    <LinearLayout
+        android:id="@+id/copyRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/withLove"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:background="@color/transparent"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:text="@string/copy"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic|bold"
+            android:textColor="@color/colorAccent"
+            android:background="@color/transparent"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:text="@string/scrap"/>
+
+
+    </LinearLayout>
+
+
+<!--      </App Details>  -->
+
+<!--Founders (Main Programmers Data) -->
+
+
+
+
+
+
+<!--    Thomas Meshael-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/copyRight"
+            android:backgroundTint="@color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/white_d2"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+<!--2Math image-->
+                    <ImageView
+                        android:contentDescription="@string/tom"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/thomas_round"
+                        android:outlineProvider="bounds"
+                        android:foregroundGravity="center_vertical">
+
+                    </ImageView>
+
+<!--                    2Math name and description-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tom"
+                            android:textSize="24sp"
+                            android:textColor="@color/colorAccent"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tom_description"
+                            android:textAlignment="viewEnd"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorAccent"/>
+
+                    </LinearLayout>
+
+
+
+
+
+<!--                    2Math: face & gmail-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="50"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="end"
+                        android:gravity="end">
+
+                        <ImageButton
+                            android:id="@+id/imageButton11"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="end"
+                            android:background="@color/transparent"
+                            android:backgroundTintMode="src_over"
+                            android:clickable="true"
+                            android:contentDescription="@string/face"
+                            android:focusable="true"
+                            android:foregroundGravity="right"
+                            android:onClick="facebook_Thomas"
+                            app:srcCompat="@drawable/ic_facebook"
+
+                            />
+
+                        <ImageButton
+                            android:id="@+id/imageButton6"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="end"
+                            android:background="@color/transparent"
+                            android:backgroundTintMode="src_over"
+                            android:clickable="true"
+                            android:contentDescription="@string/gmail"
+                            android:focusable="true"
+                            android:foregroundGravity="right"
+                            android:onClick="gMail"
+                            app:srcCompat="@drawable/ic_gmail" />
+                    </LinearLayout>
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pav"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/transparent"
+            android:layout_below="@id/cardView"
+            android:layout_marginBottom="1dp">
+
+            <!--          Pav image-->
+            <LinearLayout
+                android:background="@color/white_d2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:contentDescription="@string/pav"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/pavlyimg_round"
+                    android:outlineProvider="bounds"
+                    android:foregroundGravity="center_vertical">
+
+                </ImageView>
+
+
+
+
+                <!--                    Pav name & description-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pav"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorAccent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pav_description"
+                        android:textAlignment="viewEnd"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorAccent"/>
+
+                </LinearLayout>
+
+
+
+
+
+                <!--                    Pav face & gmail-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="50"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="end"
+                    android:gravity="end">
+
+                    <ImageButton
+                        android:id="@+id/imageButton16"
+                        android:layout_width="43dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:background="@color/transparent"
+                        android:backgroundTintMode="src_over"
+                        android:clickable="true"
+                        android:onClick="facebook_pavly"
+                        android:contentDescription="@string/face"
+                        android:focusable="true"
+                        android:foregroundGravity="right"
+                        app:srcCompat="@drawable/ic_facebook"
+
+                        />
+
+                    <ImageButton
+                        android:id="@+id/imageButton15"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:background="@color/transparent"
+                        android:backgroundTintMode="src_over"
+                        android:clickable="true"
+                        android:onClick="gMail"
+                        android:contentDescription="@string/gmail"
+                        android:focusable="true"
+                        android:foregroundGravity="right"
+                        app:srcCompat="@drawable/ic_gmail" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fady"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="8dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/transparent"
+            android:layout_below="@id/pav"
+            android:layout_marginBottom="48dp"
+            >
+
+            <!--          Pav image-->
+            <LinearLayout
+                android:background="@color/white_d2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:contentDescription="@string/pav"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/bishoyimg_round"
+                    android:outlineProvider="bounds"
+                    android:foregroundGravity="center_vertical">
+
+                </ImageView>
+
+                <!--                    Fady name & description-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bishoy"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorAccent"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bishoy_description"
+                        android:textAlignment="viewEnd"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorAccent"/>
+
+                </LinearLayout>
+
+
+
+
+
+                <!--                    Fady face & gmail-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="50"
+                    android:layout_gravity="end"
+                    android:gravity="end">
+
+                    <ImageButton
+                        android:layout_width="43dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:background="@color/transparent"
+                        android:backgroundTintMode="src_over"
+                        android:clickable="true"
+                        android:onClick="facebook_bishoy"
+                        android:contentDescription="@string/face"
+                        android:focusable="true"
+                        android:foregroundGravity="right"
+                        app:srcCompat="@drawable/ic_facebook"
+
+                        />
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:background="@color/transparent"
+                        android:backgroundTintMode="src_over"
+                        android:clickable="true"
+                        android:contentDescription="@string/gmail"
+                        android:onClick="gMail"
+                        android:focusable="true"
+                        android:foregroundGravity="right"
+                        app:srcCompat="@drawable/ic_gmail" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

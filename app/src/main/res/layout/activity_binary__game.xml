@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainScreens.Binary_Game"
+    android:orientation="vertical"
+    android:background="#effefe">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/binary_game"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/dark31"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/binary_instructions"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:padding="16dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:onClick="startGame"
+        android:padding="24dp"
+        android:text="@string/start_game"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/green_hashed_border"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+
+        <EditText
+            android:id="@+id/hours"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor"
+            android:backgroundTint="#388E3C"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/column"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#00C853"/>
+
+        <EditText
+            android:id="@+id/minutes"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor"
+            android:backgroundTint="#388E3C"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/column"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#00C853"/>
+
+        <EditText
+            android:id="@+id/seconds"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor"
+            android:backgroundTint="#388E3C"/>
+
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="60dp"
+        android:paddingEnd="60dp"
+        android:onClick="Send_binary"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/button"/>
+
+
+
+
+</LinearLayout>
